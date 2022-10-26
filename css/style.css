@@ -1,0 +1,765 @@
+/* common css start  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #7968ef;
+  --black-color: #29313d;
+  --white-color: #fff;
+  --white2-color: #f0edff;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Nunito", sans-serif;
+  --third-font: "Open Sans", sans-serif;
+  --regular-font-weight: 400;
+  --medium-font-weight: 500;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: 700;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+.common-heading h1 {
+  font-size: 48px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  line-height: 140%;
+}
+
+.common-sub-heading h3 {
+  font-size: 24px;
+  font-weight: var(--medium-font-weight);
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  line-height: 150%;
+  color: var(--primary-color);
+}
+
+/* common css end  */
+
+/* 
+
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;              
+
+*/
+
+/* navbar css start  */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-item .nav-link {
+  font-size: 18px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--third-font);
+  color: var(--white-color);
+  margin: 0 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid var(--white-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+  transition: all 0.3s ease-in;
+}
+
+.nav-btn:hover {
+  background: var(--white-color);
+  border: 1px solid var(--white-color);
+  color: #04152e;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler {
+  color: var(--white-color);
+  background-image: none;
+  border: var(--white-color);
+}
+
+.navbar-toggler:focus {
+  color: var(--white-color);
+}
+
+/* navbar area css end  */
+
+/* bannar area css start  */
+
+#banner {
+  background-image: url("../images/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 500px;
+  position: relative;
+}
+
+.banner-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-content-top {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-content-top span {
+  font-size: 20px;
+  font-weight: var(--medium-font-weight);
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+
+.banner-content-bottom h1 {
+  font-size: 64px;
+  font-weight: var(--bold-font-weight);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  color: var(--white-color);
+  line-height: 130%;
+  margin-top: 20px;
+}
+
+.custom-lg-9 {
+  width: 87%;
+}
+
+.banner-content-bottom p {
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  color: var(--white-color);
+  line-height: 200%;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+
+.banner-input {
+  width: 380px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-input input {
+  width: 100%;
+  padding: 21px 165px 21px 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.banner-input input:focus {
+  outline: 0;
+}
+
+.banner-input button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--primary-color);
+  border: 0;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: "Nunito", sans-serif;
+}
+
+.rocket {
+  width: 350px;
+  position: absolute;
+  bottom: 146px;
+  right: 14px;
+}
+
+.rocket img {
+  width: 100%;
+}
+
+.cloud {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.brand-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+/* bannar area css end */
+
+/* service area css start  */
+
+#service {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.service-common-heading h1 {
+  padding: 0 320px;
+  margin-bottom: 60px;
+}
+
+.service-left-content p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 200%;
+  margin-bottom: 80px;
+}
+
+.service-right-item {
+  background: var(--white2-color);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.service-right-item:nth-child(2) {
+  background: var(--white2-color);
+  margin: 36px 0;
+}
+
+.service-right-item:nth-child(3) {
+  background: var(--white2-color);
+}
+
+.service-right-item svg {
+  width: 120px;
+  height: 120px;
+}
+
+.service-right-item h2 {
+  color: var(--black-color);
+  font-size: 28px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--primary-font);
+  line-height: 140%;
+}
+
+.service-right-item p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 200%;
+}
+
+/* service area css end */
+
+/* traffic area css start  */
+#traffic {
+  background: var(--white2-color);
+  padding-bottom: 100px;
+  padding-top: 110px;
+}
+
+.traffic-left p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 200%;
+}
+/* traffic area css end */
+
+/* help area css start  */
+#help {
+  background: rgba(241, 251, 251, 0.5);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.help-box {
+  border-radius: 14px;
+  padding: 40px 0px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+.help-item:nth-child(1) .help-box {
+  background: #f8744c66;
+  position: relative;
+  cursor: pointer;
+}
+
+.help-item:nth-child(2) .help-box {
+  background: var(--white2-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.help-item:nth-child(3) .help-box {
+  background: rgba(232, 252, 242, 0.7);
+  position: relative;
+}
+
+.help-item:nth-child(4) .help-box {
+  background: var(--white2-color);
+  position: relative;
+}
+
+.help-icon svg {
+  padding-bottom: 30px;
+  transition: all ease-in 0.3s;
+}
+
+.help-icon.one svg {
+  color: #e77957;
+}
+
+.help-icon.two svg {
+  color: var(--primary-color);
+}
+.help-icon.three svg {
+  color: #63de9d;
+}
+.help-icon.four svg {
+  color: #b8a690;
+}
+
+.help-item .help-box::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 25px 0 25px;
+  border-color: #f8a64c transparent transparent transparent;
+}
+
+.help-item:hover .help-box {
+  background: #f8a64c;
+  color: var(--white-color);
+}
+
+.help-item:hover .help-icon svg {
+  color: var(--white-color);
+}
+
+.help-item .help-box:hover::after {
+  opacity: 1;
+  pointer-events: all;
+  border-color: #f8a64c transparent transparent transparent;
+}
+
+.help-bottom {
+  margin-top: 100px;
+}
+
+.help-right p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 200%;
+  margin: 20px 0;
+}
+
+.help-right h1 {
+  color: var(--black-color);
+  font-size: 36px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--primary-font);
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.help-right button {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 100%;
+  background: var(--primary-color);
+  padding: 18px;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.help-right button:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background: transparent;
+}
+/* help area css end */
+
+/* case study area css start  */
+#case {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.case-top-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.case-top-right button {
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  border-radius: 10px;
+  padding: 7px 15px;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.case-top-right button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.case-card-img {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.case-card-box:nth-child(1) .case-card .case-card-img {
+  background-color: rgba(105, 85, 234, 0.3);
+}
+
+.case-card-box:nth-child(2) .case-card .case-card-img {
+  background-color: rgba(232, 252, 242);
+}
+
+.case-card-box:nth-child(3) .case-card .case-card-img {
+  background-color: rgba(248, 165, 76, 0.3);
+}
+
+.case-card {
+  margin-top: 60px;
+}
+
+.case-card h2 {
+  color: var(--black-color);
+  font-size: 28px;
+  font-weight: var(--medium-font-weight);
+  font-family: var(--primary-font);
+  line-height: 140%;
+  text-transform: capitalize;
+  margin-top: 24px;
+}
+
+.case-card p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 200%;
+  margin-top: 14px;
+}
+/* case study area css end */
+
+/* pricing area css start  */
+#pricing {
+  background-color: rgba(241, 251, 251, 0.5);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.content-info {
+  position: relative;
+  margin-top: 60px;
+  border-right: 1px solid rgba(221, 221, 221, 0.3);
+}
+.pricing-main:nth-child(4) .content-info {
+  border-right: 0;
+}
+.content-info::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 12px;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+
+.pricing-main:nth-child(1) .content-info::before {
+  background: #d2eafd;
+}
+
+.pricing-main:nth-child(2) .content-info::before {
+  background: #323232;
+}
+
+.pricing-main:nth-child(3) .content-info::before {
+  background: #43cb83;
+}
+
+.pricing-main:nth-child(4) .content-info::before {
+  background: var(--primary-color);
+}
+
+.content-info h3 {
+  color: var(--black-color);
+  font-size: 24px;
+  font-weight: var(--medium-font-weight);
+  font-family: var(--primary-font);
+  line-height: 160%;
+  margin-bottom: 0;
+}
+
+.content-info span {
+  line-height: 240%;
+}
+
+.content-info ul {
+  margin-top: 60px;
+}
+
+.content-info ul li {
+  color: var(--black-color);
+  font-size: 24px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--primary-font);
+  line-height: 160%;
+  padding: 30px 0;
+}
+
+.pricing-main:nth-child(n + 2) .content-info ul li:nth-child(n + 1) {
+  font-weight: var(--regular-font-weight);
+}
+
+.content-info ul li i {
+  color: #43cb83;
+  cursor: pointer;
+}
+
+.pricing-main:nth-child(-n + 3) .content-info ul li:nth-child(4) i {
+  color: rgb(252, 84, 84);
+}
+
+.content-info ul li:nth-child(odd) {
+  background-color: rgba(239, 244, 248, 0.6);
+}
+
+.content-info ul li:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.content-info button {
+  padding: 25px 0;
+  color: var(--white-color);
+  border: 0;
+  width: 100%;
+}
+
+.pricing-main:nth-child(2) .content-info button {
+  background: #323232;
+  transition: all 0.3s ease-in;
+}
+
+.pricing-main:nth-child(2) .content-info button:hover {
+  background: rgba(50, 50, 50, 0.6);
+}
+
+.pricing-main:nth-child(3) .content-info button {
+  background: #43cb83;
+  transition: all 0.3s ease-in;
+}
+
+.pricing-main:nth-child(3) .content-info button:hover {
+  background: rgba(67, 203, 130, 0.6);
+}
+
+.pricing-main:nth-child(4) .content-info button {
+  background: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.pricing-main:nth-child(4) .content-info button:hover {
+  background: rgba(133, 90, 159, 0.6);
+}
+/* pricing area css end */
+
+/* analytics area css start  */
+
+#analytics {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 100%;
+}
+
+.analytics-main {
+  max-width: 100%;
+  height: 500px;
+  background: radial-gradient(
+    83.85% 128.37% at 37.1% 10.23%,
+    #082859 0%,
+    #07234d 20.14%,
+    #04152e 56.38%,
+    #000000 100%
+  );
+  margin: 0 30px;
+  border-radius: 70px;
+  position: relative;
+}
+
+.analytics-main img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 70px;
+}
+
+.analytics-wrapper {
+  width: 100%;
+  height: 100%;
+  color: var(--white-color);
+  position: relative;
+  z-index: 1;
+}
+
+.analytics-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.analytics-content p {
+  padding: 0 160px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 160%;
+}
+/* analytics area css end */
+
+/* footer area css start  */
+#footer-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: rgba(241, 251, 251, 0.5);
+}
+
+.footer-left p {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 180%;
+  margin-top: 40px;
+  padding-right: 20px;
+}
+
+.features h3 .products h3 .support h3 {
+  color: var(--black-color);
+  font-size: 24px;
+  font-weight: var(--semi-bold-font-weight);
+  font-family: var(--third-font);
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.features ul li a,
+.products ul li a,
+.support ul li a {
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 120%;
+}
+.features ul li,
+.products ul li,
+.support ul li {
+  margin-top: 25px;
+}
+
+.footer-bottom {
+  margin-top: 80px;
+}
+
+.footer-bottom-left span,
+.footer-bottom-right span {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-family: "Nunito", sans-serif;
+  line-height: 180%;
+}
+
+.footer-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* footer area css end  */
